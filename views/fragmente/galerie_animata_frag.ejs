@@ -1,0 +1,16 @@
+
+            <section id="gal">
+                <h2>Galerie animata</h2>
+                <p>Pentru mai multe informatii veniti cu cursorul pe imagini</p>
+                <div id="galerie-animata">
+                    <% for (let imag of locals.imagini){ %>
+                        <figure id="_figure">
+                            <picture>
+                                <source srcset="/<%-imag.mic%>" media="(max-width:750px)" />
+                                <img src="/<%-imag.mare%>" alt="text" id="_picture"/>
+                            </picture>
+                            <figcaption><%-imag.descriere%></figcaption>
+                        </figure>
+                        <% } %>
+                </div>
+            </section>

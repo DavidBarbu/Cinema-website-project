@@ -1,0 +1,84 @@
+{
+	"cale_galerie": "resurse/imagini/galerie",
+	"imagini": [
+		{
+			"cale_imagine": "tort-trandafiri.png",
+			"titlu": "Nume imagine",
+			"descriere": "text descriere",
+			"timp": "00:00-23:59"
+		},
+		{
+			"cale_imagine": "tarta-afine.png",
+			"titlu": "Nume imagine",
+			"descriere": "text descriere",
+			"timp": "09:00-22:00"
+		},
+		{
+			"cale_imagine": "prajitura-ciocolata.png",
+			"titlu": "Nume imagine",
+			"descriere": "text descriere",
+			"timp": "09:00-22:00"
+		},
+		{
+			"cale_imagine": "tort-scortisoara.png",
+			"titlu": "Nume imagine",
+			"descriere": "text descriere",
+			"timp": "09:00-22:00"
+		},
+		{
+			"cale_imagine": "gogosi.png",
+			"titlu": "Nume imagine",
+			"descriere": "text descriere",
+			"timp": "09:00-22:00"
+		},
+		{
+			"cale_imagine": "clatite.png",
+			"titlu": "Nume imagine",
+			"descriere": "text descriere",
+			"timp": "09:00-22:00"
+		},
+		{
+			"cale_imagine": "briose-frisca.png",
+			"titlu": "Nume imagine",
+			"descriere": "text descriere",
+			"timp": "09:00-22:00"
+		},
+		{
+			"cale_imagine": "Angel and the Badman.png",
+			"titlu": "Angel and the Badman",
+			"descriere": "Angel and the Badman",
+			"timp": "09:00-22:00"
+		},
+		{
+			"cale_imagine": "Carnival of Souls.png",
+			"titlu": "Carnival of Souls",
+			"descriere": "Carnival of Souls",
+			"timp": "09:00-22:00"
+		},
+		{
+			"cale_imagine": "Cyrano de Bergerac.png",
+			"titlu": "Cyrano de Bergerac",
+			"descriere": "Cyrano de Bergerac",
+			"timp": "09:00-22:00"
+		},
+		{
+			"cale_imagine": "The Brain That Wouldn't Die.png",
+			"titlu": "The Brain That Wouldn't Die",
+			"descriere": "The Brain That Wouldn't Die",
+			"timp": "09:00-22:00"
+		},
+		{
+			"cale_imagine": "The General.png",
+			"titlu": "The General",
+			"descriere": "The General",
+			"timp": "09:00-22:00"
+		},
+		{
+			"cale_imagine": "The Hitch-Hiker.png",
+			"titlu": "The Hitch-Hiker",
+			"descriere": "The Hitch-Hiker",
+			"timp": "09:00-22:00"
+		}
+		
+	]
+}

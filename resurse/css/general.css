@@ -1,0 +1,299 @@
+
+@import "nav.css";
+html{
+    font-size: 16px;
+}
+
+
+body {
+    --dark: #000000;
+    --dark_violet: #3C0054; 
+    --dark_light_violet: #65008C;
+    --light_dark_violet: #9700D5; 
+    --light_violet: #B700FF; 
+
+    background-color: var(--light_violet);
+   
+    margin-top:0;
+    margin-bottom:0;
+    margin-top:0;
+    margin-bottom:0;
+    --body-padding:3rem;
+
+    --padding-intern:2%;
+
+    padding-left:var(--body-padding);
+    padding-right:var(--body-padding);
+    background-attachment: fixed;
+    min-width:330px
+
+}
+h1{
+	font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+    text-align: left;
+}
+
+main{
+    --main-border:1px solid black;
+    
+    border-left:var(--main-border);
+    border-right:var(--main-border);
+    
+}
+footer{
+    
+    border-left:var(--main-border);
+    border-right:var(--main-border);
+    display: grid;
+    background-color: var(--light_dark_violet);
+    --main-border:1px solid black;
+    
+    border-top:6px solid var(--dark_violet);
+    border-left:6px solid var(--dark_violet);
+    border-radius: 15px;
+    padding:1rem;
+    background-color: var(--light_dark_violet);
+}
+
+  #grid-pagina {
+    display: grid;
+    grid-template-areas: "welcome welcome oferta"
+                         "film film recomandare"
+                         "item3 item2 item4"
+                         "item8 item8 item8"
+                         "item7 item5 item6";
+    background-color: var(--light_violet);
+    padding: var(--padding-intern);
+    grid-gap: 1rem;
+  }
+  
+  #grid-pagina>section{
+    border-top:6px solid var(--dark_violet);
+    border-left:6px solid var(--dark_violet);
+    border-radius: 15px;
+    padding:1rem;
+    background-color: var(--light_dark_violet);
+  }
+
+  #welcome{
+      grid-area: welcome;
+  }
+
+  #oferta{
+      grid-area: oferta;
+  }
+  #recomandare{
+      grid-area: recomandare;
+  }
+  #film{
+      grid-area: film;
+  }
+#item2{
+    grid-area: item2;
+}
+#item3{
+    grid-area: item3;
+}
+#item4{
+    grid-area: item4;
+}
+#item5{
+    grid-area: item5;
+}
+#item6{
+    grid-area: item6;
+}
+#item7{
+    grid-area: item7;
+}
+#item8{
+    grid-area: item8;
+}
+
+hr.hsir{
+    border: var(--light_dark_violet);
+    background: linear-gradient(var(--light_dark_violet), var(--dark_violet), var(--light_dark_violet));
+    border-radius: 3rem;
+}
+hr.hsir::after{
+    content: ". . .";
+    color: var(--light_dark_violet);
+    background: radial-gradient(black, var(--light_dark_violet), var(--light_dark_violet));
+    margin-left: 50%;
+
+}
+
+#link-top{
+    position: fixed;
+    display:block;
+    opacity:0.5;
+
+    bottom:20px;
+    right:20px;
+    width:50px;
+    height:50px;
+    background-color: white;
+    border-radius: 50%;
+    border:1px solid var(--dark_violet);
+    box-shadow:0px 0px 7px 2px inset var(--dark_violet);
+    overflow:visible;
+}
+#link-top:hover{
+    opacity:1;
+    transition-duration: 1s;
+}
+#triunghi{
+    position:absolute;
+    bottom:-43px;
+    right:43px;
+    border-bottom:40px solid transparent;
+    border-top:0px solid transparent;
+    background-color:var(--culoare-mov);   
+    background-clip: border-box;
+    border-radius: 100%;
+    padding:0;
+    width:0;
+    box-sizing:border-box;
+    font-size: 50px;
+}
+#triunghi::after{
+    position:absolute;
+    display: block;
+    left:-20px;
+    content:" ";
+    width:40px;
+    height:40px;
+    background-position: center 15px;
+    background-repeat:no-repeat;
+    background-size: 20px 20px;
+
+}
+div.taburi-iframe{
+    max-width:700px;
+    width:100%;
+    border: none;
+}
+
+
+.taburi-iframe a{
+    display: flexbox;
+    
+    
+    position: relative;
+    text-decoration: none;
+    border:1px solid black;
+    
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-image: linear-gradient(var(--dark_violet), var(--light_dark_violet) 50%, var(--light_violet));
+    color:white;
+    transition:all 0.5s linear;
+    text-align: center;
+    margin-right: 0;
+    flex-direction: row-reverse;
+    margin-right: auto;
+    opacity:0.5;
+    
+}
+
+.taburi-iframe a+a{
+    
+    margin-right:0px;
+    flex-direction: row-reverse;
+    
+    margin-right: auto;
+}
+
+.taburi-iframe a:hover{
+    color:white;
+
+    background-image: none;
+    background-color: var(--light_dark_violet);
+    opacity:1;
+    transition-duration: 0.5s;
+}
+div>iframe.Iframe{
+    border-width: 8px;
+    border-color: var(--dark_violet);
+}
+
+
+
+div.banner{
+    display:block;
+    position:fixed;
+    bottom: 0px;
+    opacity: 0;
+    border: 3px solid var(--dark_light_violet);
+    background-color: var(--light_violet);
+    width: 100%;
+    margin-left: -60px;
+    text-align: center;
+    font-size:20px ;
+    overflow: hidden;
+    animation-timing-function: linear;
+    animation-name: ticker;
+}
+div.banner{
+    animation-duration: 10s;
+}
+div.banner:hover{
+    animation-play-state: paused; 
+  }
+
+
+@keyframes ticker {
+    0% { opacity: 1; transform: translate3d(-100%, 0, 0); background-color: var(--light_violet) ; border-color: var(--dark_light_violet);}
+    25%{ background-color: var(--dark_light_violet); border-color: var(--light_violet);}
+    50% { transform: translate3d(0, 0, 0); background-color: var(--light_violet) ; border-color: var(--dark_light_violet);opacity: 1;}
+    99%{opacity:1}
+    100% {opacity: 0;}
+}
+table.tabel{
+    border-collapse: collapse;
+    width: 100%;
+    color: white;
+  }
+  
+body {
+    counter-reset: section;
+  }
+  
+  table tr {
+  counter-increment: row-num;
+}
+table tr td:first-child::before {
+    content: counter(row-num) ". ";
+}
+  
+  th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid black;
+  }
+  #r1,#r3,#r5,#r7,#r9,#r11{
+      background-color: var(--dark_violet);
+  }
+  #r2,#r4,#r6,#r8,#r10,#r12{
+    background-color: black;
+}
+thead tr{
+    background-color: black;
+
+}
+tfoot tr{
+    background-color: var(--dark_violet);
+}
+  
+tbody tr:hover, tfoot tr:hover {
+    background-color:#f5f5f5;
+    opacity: 0.5
+    }
+#item2 div{
+    border: 10px solid var(--dark_violet);
+    border-radius: 2%;
+}
+
+  

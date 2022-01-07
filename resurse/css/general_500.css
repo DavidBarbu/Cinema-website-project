@@ -1,0 +1,27 @@
+
+html{
+    font-size:14px;
+}
+body{
+    --body-padding:0px;
+    
+}
+h1{
+    text-align: center;
+}
+#grid-pagina{
+    display:block;
+}
+
+section{
+    margin-top:1rem;
+}
+div.banner{
+    display: none;
+}
+#item2 div{
+    overflow:scroll;
+}
+#gal{
+    display: none;
+}

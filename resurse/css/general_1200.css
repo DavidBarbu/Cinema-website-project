@@ -1,0 +1,48 @@
+
+html{
+    font-size:15px;
+}
+body{
+    --body-padding:1.5rem;
+    margin: 0;
+}
+h1{
+    font-family: "Italic", cursive;
+    font-size:2rem;
+}
+#grid-pagina{
+    display:grid;
+    grid-template-areas: "welcome welcome " 
+                         "oferta oferta "
+                         "recomandare  recomandare"
+                         "film     film     "
+                         "item2    item2      "
+                         "itme3    item3   "
+                         "itme4    item4   "
+                         "item5    item5   "
+                         "item6 item6 "
+                         "item7 item7"
+                         "item8 item8 ";
+    grid-gap:1rem;
+}
+iframe{
+    max-width:500px;
+    width:100%;
+}
+div.taburi-iframe{
+    max-width: 500px;
+    width: 100%;
+}
+#grid-pagina>section{
+    border-top:6px solid var(--dark_violet);
+    border-left:6px solid var(--dark_violet);
+    border-radius: 15px;
+    padding:1rem;
+    background-color: var(--light_dark_violet);
+  }
+div.banner{
+    display: none;
+}
+#gal{
+    display: none;
+}

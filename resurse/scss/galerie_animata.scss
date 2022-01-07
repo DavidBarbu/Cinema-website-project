@@ -1,0 +1,68 @@
+#galerie-animata {
+    margin: 5vh auto;
+      width: 400px;
+      height: 300px;
+      border: 15px solid black;
+      border-image:  linear-gradient(var(--dark_violet), var(--dark),var(--dark_violet)) 30;
+      position: relative;
+      overflow: hidden;
+  
+    #_figure {
+        position:absolute;
+        width: 400px;
+        height: 300px;
+        left: 0;
+        top: 0;
+        z-index: 0;
+      clip-path: polygon(0 100%, 100% 0, 100% 0, 100% 0, 0 100%, 0 100%);
+      animation-name: animatie;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-duration: 30s;
+        margin: 0;
+   
+      @for $i from 10 through 1 {
+        &:nth-of-type(#{$i}) {
+          animation-delay: calc((10 - #{$i}) * 3s);
+      }
+  
+      #_picture {
+          padding: 0px;
+        width: 400px;
+          height: 300px;
+      }
+  
+      figcaption {
+        bottom: 0.6vh;
+        position: absolute;
+        text-align: center;
+        font-family: Comfortaa;
+        font-size: calc(1vw + 1vh);
+        width: 100%;
+        background-color: rgba(236, 240, 241, 0.81);
+        height: auto;
+      }
+    }
+  }
+  }
+  
+  @keyframes animatie {
+    0% {
+      z-index: 10;
+      opacity: 1;
+    }
+    5% {
+       clip-path: polygon(0 1%, 1% 0, 100% 0, 100% 99%, 99% 100%, 0 100%);
+    }
+    90% {
+      opacity: 0;
+      clip-path: polygon(0 0, 0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+    }
+    100% {
+      opacity: 0;
+      clip-path: polygon(0 0, 0 0, 100% 0, 100% 100%, 100% 100%, 0 100%);
+    }
+  }:hover {
+    animation-play-state: paused;
+}

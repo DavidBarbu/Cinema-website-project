@@ -1,0 +1,42 @@
+
+#hamburger{
+    display:block;
+}
+ul.meniu{
+    display: block;
+    position:absolute;
+    width:100%;
+    clip-path: circle(0% at 0 0);
+    transition-duration: 0.7s;
+    transition-timing-function: linear;
+}
+#ch-menu:checked+ul.meniu{
+    clip-path: circle(200% at 0 0);
+    transition-duration: 0.7s;
+    transition-timing-function: linear;
+    
+}
+nav ul.meniu li{
+    width:100%;
+}
+nav ul.meniu>li ul{
+    position:absolute;
+    width:100%;
+}
+nav ul.meniu>li li a:before{
+    content:" \25B7\00A0	";
+    color:white;
+
+}
+nav ul.meniu li a:hover{
+    background: black;
+}
+nav ul.meniu li.fix ::before {
+    display: block;
+    height: 0;
+
+}
+nav ul.meniu>li:hover>ul{
+    display: block;
+    z-index: 20;
+}

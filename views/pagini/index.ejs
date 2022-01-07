@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta name="description"
+        content="Acesta este un site care administreaza cinematografele din intreaga tara. Tot in acest site puteti gasi programul fiecarui cinematograf, dar si filmele care sunt in rulare sau care urmeaza sa apara.">
+    <meta name="keywords" content="Cinema, Film, Filme, Cinematograf, Bilete, Bilet">
+    <title id="titlu">Cinematograful SiNehMah</title>
+    <%- include("../fragmente/head") %>
+
+
+
+</head>
+
+<body>
+    <%- include("../fragmente/header") %>
+
+
+        <main>
+            <p id="watermark"></p>
+            <div id="grid-pagina">
+                <section id="welcome">
+                    <h2>Bine ati venit pe la noi!</h2>
+                    <p>Va multumim ca alegeti <b>cinematografele</b> noastre!</p>
+                    <q>Cinematografia, ca si pictura, arata invizibilul. - Jean-Luc Godard</q>
+                </section>
+
+                <section id=recomandare>
+                    <h2>Recomandarile saptamanii!!</h2>
+                    <h3><a href="https://www.youtube.com/embed/wO02uW15_WU" target="_blank">GODZILLA VS KONG</a></h3>
+
+                    <details>
+                        <summary>Despre GODZILLA VS KONG</summary>
+                        <p>Godzilla vs. Kong (titlu original: Godzilla vs. Kong) este un film american din 2021 regizat
+                            de
+                            Adam
+                            Wingard. Este creat în genurile științifico-fantastic, Kaijū. Rolurile principale sunt
+                            interpretate
+                            de actorii Alexander Skarsgård, Millie Bobby Brown, Rebecca Hall, Brian Tyree Henry, Shun
+                            Oguri,
+                            Eiza González, Jessica Henwick, Julian Dennison, Kyle Chandler și Demián Bichir.
+
+                            Este o continuare a filmelor Godzilla: King of the Monsters (2019) și Kong: Skull Island
+                            (2017)
+                            și
+                            al patrulea din seria MonsterVerse (Legendary Entertainment). Este al 36-lea film din
+                            franciza
+                            Godzilla.</p>
+                    </details>
+
+                    <h3><a href="https://www.youtube.com/embed/_qyw6LC5pnE" target="_blank">Fast & Furious #9</a></h3>
+                    <details>
+                        <summary>Despre Fast & Furious #9</summary>
+                        <p>Furios și iute 9 (F9 în engleză) este un viitor film american de acțiune regizat de Justin
+                            Lin și
+                            scris de Daniel Casey. O continuare a filmului The Fate of the Furious din 2017,
+                            va fi a noua versiune principală din franciza Furios și iute și al zecelea film lungmetraj
+                            lansat în
+                            general. Este primul film din franciză din Mai furios, mai iute din
+                            2003 care nu a fost scris sau co-scris de Chris Morgan și primul film din Furios și iute 6
+                            din
+                            2013
+                            care a fost regizat de Lin. Filmul va avea rolul lui Vin Diesel, John Cena,
+                            Michelle Rodriguez, Tyrese Gibson, Chris "Ludacris" Bridges, Jordana Brewster, Nathalie
+                            Emmanuel,
+                            Sung Kang, Helen Mirren și Charlize Theron.</p>
+                    </details>
+
+
+
+                </section>
+                <section id="oferta">
+                    <h2>Oferta!</h2>
+                    <p>Sambata si duminica <strong>reducerea este de 20%</strong> pentru orice <b>film</b>!</p>
+                    <p>Studentii pot profita de 1 <b>bilet</b> <strong>gratis</strong> in fiecare luna!</p>
+                    <p><b>Cinema</b> va recomanda sa va cumparati <b>bilete</b> online si va ofera o reducere de 15%
+                        pentru
+                        fiecare <b>bilet</b>!
+                    </p>
+                </section>
+
+                <section id="film">
+                    <h2>
+                        <i class="fas fa-film"></i> Filme populare
+                    </h2>
+                    <p>In iframe-ul urmator puteti gasi filmele care sunt in top saptamana aceasta..</p>
+                    <div>
+                        <iframe class="Iframe" name="ifr-video" width="560" height="315"
+                            src="https://www.youtube.com/embed/C0BMx-qxsP4"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                        <div class="taburi-iframe">
+                            <a href="https://www.youtube.com/embed/C0BMx-qxsP4" target="ifr-video">John Wick #1</a>
+                            <a href="https://www.youtube.com/embed/_qyw6LC5pnE" target="ifr-video">Fast & Furious #9</a>
+                            <a href="https://www.youtube.com/embed/wO02uW15_WU" target="ifr-video">GODZILLA VS KONG</a>
+                        </div>
+                    </div>
+                    <p>Pentru a va face o parere despre filmele in rulare puteti accesa <a href="https://www.imdb.com/"
+                            target="_blank">imdb</a>.</p>
+                </section>
+
+
+
+                <section id="item2">
+                    <h2>TABEL AICI</h2>
+                    <div>
+                        <table class="tabel">
+                            <thead>
+                                <tr>
+                                    <th id="c1">Luna</th>
+                                    <th>Filme redate</th>
+                                    <th>Filme in premiera</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr id="r1">
+                                    <td id="c1">Ianuarie</td>
+                                    <td>161</td>
+                                    <td>161</td>
+                                </tr>
+                                <tr id="r2">
+                                    <td id="c1">Februarie</td>
+                                    <td>98</td>
+                                    <td>161</td>
+                                </tr>
+                                <tr id="r3">
+                                    <td id="c1">Martie</td>
+                                    <td>177</td>
+                                    <td>161</td>
+                                </tr>
+                                <tr id="r4">
+                                    <td id="c1">Aprilie</td>
+                                    <td>2</td>
+                                    <td>161</td>
+                                </tr>
+                                <tr id="r5">
+                                    <td id="c1">Mai</td>
+                                    <td>67</td>
+                                    <td>161</td>
+                                </tr>
+                                <tr id="r6">
+                                    <td id="c1">Iunie</td>
+                                    <td>100</td>
+                                    <td>161</td>
+                                </tr>
+                                <tr id="r7">
+                                    <td id="c1">Iulie</td>
+                                    <td>121</td>
+                                    <td>161</td>
+                                </tr>
+                                <tr id="r8">
+                                    <td id="c1">August</td>
+                                    <td>98</td>
+                                    <td>161</td>
+                                </tr>
+                                <tr id="r9">
+                                    <td id="c1">Septembrie</td>
+                                    <td>160</td>
+                                    <td>161</td>
+                                </tr>
+                                <tr id="r10">
+                                    <td id="c1">Octombrie</td>
+                                    <td>129</td>
+                                    <td>161</td>
+                                </tr>
+                                <tr id="r11">
+                                    <td id="c1">Noiembrie</td>
+                                    <td>155</td>
+                                    <td>161</td>
+                                </tr>
+                                <tr id="r12">
+                                    <td id="c1">Decembrie</td>
+                                    <td>45</td>
+                                    <td>161</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td id="c1">Total</td>
+                                    <td>muuuult</td>
+                                    <td>putin mai putin aici</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </section>
+                <section id="item3">
+                    <h2>Item3</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed bibendum vitae nunc eu laoreet.
+                        Suspendisse id purus egestas, viverra tellus ut, ullamcorper odio. Sed vitae lacus dapibus,
+                        iaculis
+                        augue id, scelerisque sapien. Morbi eu mauris velit. In tincidunt ex sed pretium eleifend.
+                        Nullam
+                        posuere sollicitudin lacus, non malesuada enim imperdiet in. Sed eleifend ornare neque a
+                        faucibus.
+                        Maecenas gravida justo at lacus ultrices maximus. Nullam ac nibh vitae elit commodo vestibulum.
+                        Integer ligula ante, congue vitae nisl a, consectetur viverra sapien. Proin posuere sapien at
+                        magna
+                        hendrerit pretium. Fusce a nisl posuere, dignissim quam non, maximus mi. Proin tempor tempus
+                        augue,
+                        eget egestas diam scelerisque eget. Integer lacinia pharetra diam, quis vehicula nisi ultrices
+                        nec.
+                    </p>
+                </section>
+                <section id="item4">
+                    <h2>Item4</h2>
+                    <p>Suspendisse rhoncus felis mauris, non ultricies erat ultricies sed. Sed pretium gravida mi, in
+                        porta
+                        nisl vulputate vel. Duis turpis quam, scelerisque nec efficitur sit amet, elementum ac massa.
+                        Integer lorem mauris, ultrices sit amet orci et, posuere ornare turpis. Maecenas ultrices
+                        imperdiet
+                        dolor, vitae consequat metus ultrices id. Sed ullamcorper metus elementum vehicula convallis.
+                        Orci
+                        varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Ut tempus
+                        faucibus
+                        tempus. Duis eget velit lectus. Ut nec porta mi, eu porta ipsum. Quisque lacinia rhoncus
+                        consequat.
+                        Quisque erat turpis, porta ut consequat eget, eleifend sed purus. Mauris dapibus vehicula lorem
+                        ut
+                        viverra. Aliquam in tristique neque, feugiat pretium purus.
+
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus condimentum metus nec arcu
+                        blandit,
+                        quis semper velit semper. Nunc tincidunt a augue quis pulvinar. Nulla sit amet feugiat lacus.
+                        Aenean
+                        consectetur felis sit amet lacus malesuada, sit amet venenatis orci cursus. Aenean tempus, augue
+                        quis hendrerit finibus, tellus nunc fringilla tortor, ut blandit risus libero vel neque. In
+                        accumsan
+                        eleifend quam eu vestibulum. Fusce nec diam augue. Pellentesque blandit ex quis orci molestie,
+                        non
+                        condimentum augue auctor. Phasellus vehicula semper turpis vel aliquet. Aliquam ultrices ex
+                        ligula,
+                        id mollis augue porttitor nec. Aenean maximus sodales ligula.</p>
+                </section>
+                <section id="item5">
+                    <h2>Cinematic - League of Legends</h2>
+                    <div id="container-video">
+                        <div id="centrare-video">
+                            <div id="clip-video">
+                                <div id="stil-video">
+                                    <video width="320" height="240"  controls loop muted playsinline poster="/resurse/imagini/Awaken_poster.png">
+                                        <source src="resurse/video/Awaken.mp4" type="video/mp4" label="mp4">
+                                        <source src="resurse/video/Awaken.ogv" type="video/ogv" label="altcv">
+                                        <track default src="resurse/video/tracks/captions-plictiseala.vtt" kind="captions" srclang="ro" label="Romana">
+                                        <track src="resurse/video/tracks/captions-plictiseala-en.vtt" kind="captions" srclang="en" label="Engleza">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section id="item6">
+                    <h2>IP client</h2>
+                    <p>
+                        <%-locals.ip%>
+                    </p>
+                </section>
+                <section id="item7">
+                    <h2>Item7</h2>
+                    <p>Nullam pellentesque elit luctus mi sodales commodo. Vestibulum mattis semper sem, at lacinia est
+                        dapibus id. Fusce imperdiet scelerisque urna hendrerit tincidunt. Proin commodo risus vel est
+                        suscipit elementum. Nam molestie turpis sit amet sem mattis, id tincidunt eros porta. Vivamus
+                        facilisis nulla vel ante tempor finibus. Aenean eget elit aliquet, iaculis ipsum ut, accumsan
+                        quam.
+                        Proin velit dui, consectetur at commodo sed, rutrum vel metus. In et est erat. Ut fermentum
+                        risus
+                        nec malesuada rutrum.</p>
+                </section>
+                <section id="item8">
+                    <h2>Item8</h2>
+                    <p>Nullam felis erat, placerat ut finibus nec, commodo id massa. In hac habitasse platea dictumst.
+                        Nam
+                        consectetur est et libero maximus dapibus. Donec in vulputate nulla. Pellentesque interdum neque
+                        eu
+                        blandit suscipit. Etiam ut dolor tellus. Ut vulputate libero pulvinar odio vulputate fermentum.
+                        Proin tempor mi orci, ac lacinia velit aliquam vel. Nam posuere felis vel sem facilisis, auctor
+                        finibus nibh porta. Aliquam luctus nec dolor non scelerisque. Duis at nulla et lacus suscipit
+                        pulvinar in in nulla. Nunc nisi eros, interdum non est faucibus, malesuada lacinia dolor. Nullam
+                        tincidunt porttitor lorem in luctus. Nulla semper volutpat quam at fringilla. Nulla lacinia ante
+                        id
+                        nulla sodales vehicula. Suspendisse potenti.</p>
+                    <hr class="hsir">
+                    <p>Nullam felis erat, placerat ut finibus nec, commodo id massa. In hac habitasse platea dictumst.
+                        Nam
+                        consectetur est et libero maximus dapibus. Donec in vulputate nulla. Pellentesque interdum neque
+                        eu
+                        blandit suscipit. Etiam ut dolor tellus. Ut vulputate libero pulvinar odio vulputate fermentum.
+                        Proin tempor mi orci, ac lacinia velit aliquam vel. Nam posuere felis vel sem facilisis, auctor
+                        finibus nibh porta. Aliquam luctus nec dolor non scelerisque. Duis at nulla et lacus suscipit
+                        pulvinar in in nulla. Nunc nisi eros, interdum non est faucibus, malesuada lacinia dolor. Nullam
+                        tincidunt porttitor lorem in luctus. Nulla semper volutpat quam at fringilla. Nulla lacinia ante
+                        id
+                        nulla sodales vehicula. Suspendisse potenti.</p>
+                </section>
+            </div>
+
+            <%- include("../fragmente/galerie_statica_frag") %>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <%- include("../fragmente/galerie_animata_frag") %>
+
+
+            
+           
+
+        </main>
+
+        <%- include("../fragmente/footer") %>
+
+</body>
+
+</html>

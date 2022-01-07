@@ -1,0 +1,79 @@
+@media print{
+
+h1{
+    font-size: 2.5rem;
+    text-decoration:underline;
+    text-align: center;
+    
+    position: absolute;
+    top: 45%;
+    left: 20%;
+
+    
+}
+nav{
+    page-break-after: always;
+}
+nav{
+    visibility: hidden;
+}
+
+
+div.banner{
+    display:block;
+    width: 80%;
+    position:absolute;
+    margin-left: 800px;
+    border: 4px;
+    border-style:dotted;
+    bottom: 85%;
+}
+a{
+    font-style: normal;
+    color: black;
+    text-decoration-line:none ;
+}
+    iframe,figure{
+        display: none;
+    }
+#link-top{
+    display: none;
+}
+
+    #watermark
+    {
+        display: block;
+        position: fixed;
+        bottom:15px;
+        color:black;
+        left:0px;
+    }
+
+    #watermark::after{
+        
+        padding:5px;
+        display: block;
+        background: white;
+        content:"Barbu David";
+        border:5px double black;
+        height: 2cm;
+        width: 100px;
+        opacity: 65%;
+
+    }
+
+
+@page:left{
+    margin-left: 2.5cm;
+    margin-right: 0.5cm;
+}
+@page:right{
+    margin-left: 0.5cm;
+    margin-right: 2.5cm;
+}
+#footer{
+    page-break-before: always;
+}
+}
+
+

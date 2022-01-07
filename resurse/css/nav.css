@@ -1,0 +1,108 @@
+@import "general.css";
+
+body{
+    --inaltime-meniu:3rem;
+}
+
+nav ul.meniu ul{
+    display: none;
+	position:absolute;
+	width:100%;
+}
+
+nav {
+    height: var(--inaltime-meniu);
+    width: 100%;
+    padding: 0;
+    background-color: var(--dark_violet);
+    z-index: 10;
+    position: sticky;
+    top: 0;
+}
+
+nav ul.meniu>li{
+    float:left;
+    width:200px;
+	position:relative;
+}
+
+nav ul, nav li{
+    padding:0;
+    margin:0;
+}
+
+nav ul.meniu li{
+    text-align:center;
+
+    list-style-type: none;
+    background: var(--dark_violet);
+    cursor:pointer;
+}
+
+nav ul.meniu li a{
+    font-size:17px;
+    text-decoration: none;
+    color:white;
+    display: block;
+    font-weight:bold;
+    height:var(--inaltime-meniu);
+    line-height:var(--inaltime-meniu);
+    outline:1px solid black;
+}
+
+
+ul.meniu>li>ul>li a:hover{
+    background:black;
+}
+
+
+
+
+    
+
+ul.meniu a, ul.meniu div{
+   transition: background 700ms linear;
+}
+nav ul.meniu>li>ul{
+    display: block;
+    transform: scale(0);
+}
+nav ul.meniu>li:hover>ul{
+    display: block;
+    transform: scale(1);
+    transition-duration: 0.2s;
+    transition-timing-function: linear;
+}
+
+
+nav ul.meniu li.fix :hover::before {
+    display: block;
+    bottom: 0px;
+    opacity: 1;
+
+}
+
+nav ul.meniu li.fix ::before {
+    content: "";
+    width: 100%;
+    height: 10px;
+    background: linear-gradient( var(--light_violet), black, var(--dark_light_violet));
+    position: absolute;
+    left: 0;
+    transition: all 0.4s linear;
+    bottom: 100%;
+    opacity: 0;
+}
+
+
+#hamburger{
+    display: none;
+    height: var(--inaltime-meniu);
+}
+#ch-menu{
+    display: none ;
+}
+#hamburger img{
+    height:100%;
+    width:auto;
+}

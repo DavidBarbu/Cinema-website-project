@@ -1,0 +1,36 @@
+::cue{
+    background:rgba(255, 255, 255, 0.5);
+    color:var(--dark_violet);
+    
+    font-size: 1rem;
+  }
+  
+@media screen and (max-width:1000px){
+  ::cue{
+  font-size: 0.8rem;
+  }
+}
+#container-video{
+  background-size: cover;
+  width:65%;
+  max-width: 550px;
+  max-height:500px;
+  position:relative;
+  margin:0 auto;
+}
+@media screen and (min-width:1000px){
+  #container-video img{
+    top:50px;
+  }
+}
+#clip-video{
+  width:50%;
+  --raza-bord:3rem;
+  padding:0;
+  margin:0;
+  line-height: 0px;
+}
+video{
+  border-radius: 10px;
+  height:auto;
+}

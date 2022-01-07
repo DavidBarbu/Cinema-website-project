@@ -1,0 +1,19 @@
+
+
+nav{
+    height: var(--inaltime-meniu);
+    width: 100%;
+    top: 0;
+    padding: 0;
+    background-color: var(--dark_violet);
+    z-index: 10;
+    position: sticky;
+}
+nav ul.meniu>li{
+    float:left;
+    width:140px;
+	position:relative;
+}
+nav ul.meniu li a{
+    font-size:12px;
+}
